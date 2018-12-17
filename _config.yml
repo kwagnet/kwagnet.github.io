@@ -11,7 +11,7 @@ theme_settings:
 
  # Scripts
  # google_analytics: UA-7379986-1 # Tracking ID, e.g. "UA-000000-01"
- # disqus_shortname: kwag
+  disqus_shortname: kwag
   search: true # Enable the search feature
 
   # Localization strings
