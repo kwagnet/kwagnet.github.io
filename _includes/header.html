@@ -1,0 +1,43 @@
+<header class="site-header" role="banner">
+	<div class="site-branding">
+		<h1 class="site-title">
+			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+		</h1>
+		<p class="site-description">Korea Web Accessibility Group</p>
+	</div>
+	<div class="main-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h1 class="menu-toggle">Menu</h1>
+			<div class="menu-jangkunblog-container">
+				<ul id="menu-jangkunblog" class="menu">
+					<li class="menu-item"><a href="/">홈</a></li>
+					<li class="menu-item"><a href="/tawa/about-tawa/">다와</a></li>
+					<li class="menu-item"><a href="/workshop/about-workshop/">워크숍</a></li>
+					<li class="menu-item"><a href="/evaluation/">WAAST</a></li>
+					<li class="menu-item"><a href="/library/">자료실</a></li>
+					<li class="menu-item"><a href="/suggestion">방명록</a></li>
+					{% for page in site.pages %}
+					{% if page.title and page.hide != true %}
+					<!-- <li class="menu-item">
+						<a class="page-link" href="{{ page.url | relative_url }}">
+							{{ page.title }}
+						</a>
+					</li> -->
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<!-- Search bar -->
+			{% if site.theme_settings.search %}
+			<form action="{{ site.baseurl }}/search.html" method="get" role="search" class="search-form">
+				<label>
+					<span class="screen-reader-text">검색</span>
+					<input type="search" id="search-box" name="query" class="search-field" placeholder="검색 …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="검색">
+			</form>
+			{% endif %}
+		</nav>            
+	</div>
+    
+</header>

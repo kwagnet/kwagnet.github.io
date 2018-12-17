@@ -1,0 +1,49 @@
+# SITE CONFIGURATION
+baseurl: 
+url: kwag.net
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: 한국 웹 접근성 그룹
+  favicon: favicon.ico
+  description: 한국 웹 접근성 그룹(Korea Web Accessibility Group) KWAG은 국내 웹 접근성을 향상시키기 위한 자발적인 모임으로 회원 상호간의 정보 공유와 스터디, 세미나 등을 진행하는 온라인/오프라인 모임입니다.
+
+ # Scripts
+ # google_analytics: UA-7379986-1 # Tracking ID, e.g. "UA-000000-01"
+ # disqus_shortname: kwag
+  search: true # Enable the search feature
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  str_search_no_results: "No results found."
+
+  # Post navigation
+  post_navigation: false
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+image:
+  src: 'kwag.png'
+  height: 600
+  width: 1200
+  type: /png
+
