@@ -1235,8 +1235,28 @@ and Blueprint http://www.blueprintcss.org/
 .content-book {
 
     .entry-header {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
+}
+
+.sidebar-book-title {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding:5px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+.ifd-sidebar {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding:5px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
 }
 
 @media screen and (min-width: 780px) {
@@ -1256,5 +1276,9 @@ and Blueprint http://www.blueprintcss.org/
         .entry-header {
             margin-bottom: 40px;
         }
+    }
+
+    .ifd-sidebar {
+        display: none;
     }
 }
